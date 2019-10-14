@@ -3,6 +3,7 @@ SoftwareSerial BTserial(10,11);
 int sensorPin = A0;
 int sensorValue = 0;
 int butpower = 9;
+bool power=false;
 int s;
 int che=A0;
 int che0=A4; 
@@ -39,6 +40,7 @@ else
   button=0;
 }*/
 butch[i]=button;
+power=true;
 i++;
 if(i==9)
 i=0;
